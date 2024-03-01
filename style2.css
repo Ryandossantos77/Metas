@@ -1,4 +1,12 @@
 h1{
-color: aqua;
-
+    color: rgb(41, 218, 209);
 }
+:root{
+    --cor-de-fundo: blue;
+    --verde: rgba(9, 0, 128, 0);
+    --branco: white;
+    --botao-ativo:rgba(255, 255, 255, 0.493);
+    --botao-inativo:black; 
+    --texto-fundo:black; }
+    body { background-color: var
+        
