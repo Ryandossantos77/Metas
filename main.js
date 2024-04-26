@@ -42,8 +42,12 @@ function calculaTempo(tempoObjetivo) {
     segundos %= 60;  //obtem o resto da divisão dos segundos
     minutos %= 60;   //obtem o resto da divisão dos minutos
     horas %= 24;    //obtem o resto da divisão das horas
-
-
+  
+    if (tempoFinal > 0){
+        return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+    } else {
+        return "Prazo Finalizado";
+    }
 
 
 }
