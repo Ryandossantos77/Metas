@@ -34,9 +34,27 @@ function calculaTempo(tempoObjetivo) {
     minutos %= 60;   //obtem o resto da divisão dos minutos
     horas %= 24;    //obtem o resto da divisão das horas
 
-//i n s i r o  código  do   IF   e ELSE aqui}
+if (tempoFinal > 0){
+    return dias + "dias" + horas + "horas"+"minutos"+segundos+"segundos";
+}else{
+    return"prazo encerrado"
+}
 
-//INSIRA O RESTO DO CÓDIGO AQUi
+
+}
 
 
+
+    function atualizaCronometro(){
+        for (let i=0; i<contadores.length;i++){
+            contadores[i].textContent = calculaTempo(tempos[i]);   
+        }
+    }
+    
+    function comecaCronometro(){
+        atualizaCronometro();
+        setInterval(atualizaCronometro,1000);
+    }
+    
+    comecaCronometro();
 }
